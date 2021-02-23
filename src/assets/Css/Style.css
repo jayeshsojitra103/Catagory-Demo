@@ -1,0 +1,170 @@
+@charset "UTF-8";
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.page_wrapper {
+  min-height: 100vh;
+  position: relative;
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex !important;
+}
+.page_wrapper .category_wrapper {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+  width: 90%;
+  margin: 10% 0;
+}
+.page_wrapper .category_wrapper .header-wrapper .header-section {
+  justify-content: flex-end;
+  padding: 0 0 1rem 0;
+  display: flex;
+}
+.page_wrapper .category_wrapper .header-wrapper .header-section .expand_btn {
+  border: none;
+  color: #fff;
+  background-color: #007bff;
+  padding: 4px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.error {
+  color: red;
+}
+
+.expander .expander-header {
+  border-bottom: 1px solid #eee;
+  color: #007bff;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.expander .expander-header .expander-header-content .expander-title {
+  margin: 0;
+  color: #007bff;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.expander .expander-header .expander-button-image {
+  margin: auto 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+}
+.expander .expander-children {
+  line-height: 1.69;
+  color: #14131d;
+  padding: 0.5rem 0;
+  padding-right: 12.5rem;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  transition: height 0.2s ease;
+}
+.expander .expander-children .expander-body ul {
+  padding-left: 2rem;
+}
+
+.react-contextmenu {
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  color: #373a3c;
+  font-size: 16px;
+  margin: 2px 0 0;
+  min-width: 160px;
+  outline: none;
+  opacity: 0;
+  padding: 5px 0;
+  pointer-events: none;
+  text-align: left;
+  transition: opacity 250ms ease !important;
+}
+
+.react-contextmenu.react-contextmenu--visible {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 9999;
+}
+
+.react-contextmenu-item {
+  background: 0 0;
+  border: 0;
+  color: #373a3c;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 3px 20px;
+  text-align: inherit;
+  white-space: nowrap;
+}
+
+.react-contextmenu-wrapper {
+  border-bottom: 1px solid #eee;
+}
+.react-contextmenu-wrapper .name {
+  text-transform: capitalize;
+  font-weight: 400;
+  cursor: pointer;
+  margin: 0;
+  color: #007bff;
+  font-size: 1rem;
+}
+
+.react-contextmenu-item.react-contextmenu-item--active,
+.react-contextmenu-item.react-contextmenu-item--selected {
+  color: #fff;
+  background-color: #20a0ff;
+  border-color: #20a0ff;
+  text-decoration: none;
+}
+
+.react-contextmenu-item.react-contextmenu-item--disabled,
+.react-contextmenu-item.react-contextmenu-item--disabled:hover {
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.15);
+  color: #878a8c;
+}
+
+.react-contextmenu-item--divider {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  cursor: inherit;
+  margin-bottom: 3px;
+  padding: 2px 0;
+}
+
+.react-contextmenu-item--divider:hover {
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.react-contextmenu-item.react-contextmenu-submenu {
+  padding: 0;
+}
+
+.react-contextmenu-item.react-contextmenu-submenu > .react-contextmenu-item:after {
+  content: "▶";
+  display: inline-block;
+  position: absolute;
+  right: 7px;
+}
+
+.example-multiple-targets::after {
+  content: attr(data-count);
+  display: block;
+}
+
+/*# sourceMappingURL=Style.css.map */
